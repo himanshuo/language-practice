@@ -17,5 +17,3 @@ nucleotideCounts (x:xs) =
                 Just oldCount -> 
                     let updatedMap = insert x (oldCount+1) mapForRest in 
                         Right updatedMap
-
-    
