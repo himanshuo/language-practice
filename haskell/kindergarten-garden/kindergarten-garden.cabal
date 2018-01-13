@@ -1,6 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.17.1.
+-- This file has been generated from package.yaml by hpack version 0.20.0.
 --
 -- see: https://github.com/sol/hpack
+--
+-- hash: 923da4a59ae5c0196e51f32d6aba5a753612034399b76ed7bb80e175cdcb0690
 
 name:           kindergarten-garden
 version:        1.0.0.3
@@ -26,6 +28,8 @@ test-suite test
       test
   build-depends:
       base
-    , kindergarten-garden
     , hspec
+    , kindergarten-garden
+  other-modules:
+      Paths_kindergarten_garden
   default-language: Haskell2010
