@@ -1,0 +1,35 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: bb4af933110053771d048bbe2e09e2b521c16ef2b74d7d78cc5ad21da9099fc3
+
+name:           anagram
+version:        1.1.0.5
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , multiset >=0.3.3
+  exposed-modules:
+      Anagram
+  other-modules:
+      Paths_anagram
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  hs-source-dirs:
+      test
+  build-depends:
+      anagram
+    , base
+    , hspec
+  other-modules:
+      Paths_anagram
+  default-language: Haskell2010
